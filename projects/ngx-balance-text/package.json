@@ -1,8 +1,23 @@
 {
   "name": "ngx-balance-text",
   "version": "0.5.0",
-  "description": "A simple directive to make use of the balance-text polyfill by Adobe.",
+  "description": "A simple directive to make use of the balance-text polyfill.",
   "author": "Simon Foster",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simonf7/NgxBalanceText.git"
+  },
+  "bugs": {
+    "url": "https://github.com/simonf7/NgxBalanceText/issues"
+  },
+  "homepage": "https://github.com/simonf7/NgxBalanceText",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "directive"
+  ],
+  "license": "Apache 2.0",
   "peerDependencies": {
     "@angular/common": "^7.2.0",
     "@angular/core": "^7.2.0"
