@@ -1,24 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NgxBalanceText } from './ngx-balance-text.directive';
+import { ElementRef } from '@angular/core';
 
-import { NgxBalanceTextDirective } from './ngx-balance-text.directive';
+export class MockElementRef extends ElementRef {
+  constructor() {
+    super(null);
+  }
+}
 
-describe('NgxBalanceTextDirective', () => {
-  let component: NgxBalanceTextDirective;
-  let fixture: ComponentFixture<NgxBalanceTextDirective>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [NgxBalanceTextDirective]
-    }).compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(NgxBalanceTextDirective);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
+describe('NgxBalanceText', () => {
+  it('should create an instance', () => {
+    const directive = new NgxBalanceText(new MockElementRef());
+    expect(directive).toBeTruthy();
   });
 });
