@@ -1,10 +1,10 @@
 import { Directive, ElementRef } from '@angular/core';
-import * as balanceText from 'balance-text';
+import balanceText from 'balance-text';
 
 @Directive({
-  selector: '[NgxBalanceText]'
+  selector: '[ngxBalanceText]'
 })
-export class NgxBalanceTextDirective {
+export class NgxBalanceText {
   constructor(el: ElementRef) {
     balanceText(el.nativeElement, { watch: true });
   }

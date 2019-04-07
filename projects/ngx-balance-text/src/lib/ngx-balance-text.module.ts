@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { NgxBalanceTextDirective } from './ngx-balance-text.directive';
+import { NgxBalanceText } from './ngx-balance-text.directive';
 
 @NgModule({
-  declarations: [NgxBalanceTextDirective],
+  declarations: [NgxBalanceText],
   imports: [],
-  exports: [NgxBalanceTextDirective]
+  exports: [NgxBalanceText]
 })
 export class NgxBalanceTextModule {}
