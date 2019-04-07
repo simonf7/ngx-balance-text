@@ -5,12 +5,12 @@
   "author": "Simon Foster",
   "repository": {
     "type": "git",
-    "url": "https://github.com/simonf7/NgxBalanceText.git"
+    "url": "https://github.com/simonf7/ngx-balance-text.git"
   },
   "bugs": {
-    "url": "https://github.com/simonf7/NgxBalanceText/issues"
+    "url": "https://github.com/simonf7/ngx-balance-text/issues"
   },
-  "homepage": "https://github.com/simonf7/NgxBalanceText",
+  "homepage": "https://github.com/simonf7/ngx-balance-text",
   "keywords": [
     "angular",
     "javascript",
