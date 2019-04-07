@@ -1,6 +1,6 @@
 {
   "name": "ngx-balance-text",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "A simple directive to make use of the balance-text polyfill.",
   "author": "Simon Foster",
   "repository": {

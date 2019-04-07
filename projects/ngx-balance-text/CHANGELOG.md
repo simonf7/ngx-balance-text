@@ -1,5 +1,5 @@
-# NgxBalanceText - v0.5.1 (07/04/2019)
+# NgxBalanceText - v0.6.0 (08/04/2019)
 
 ## Pre-release
 
-Correct Github URL
+New build
