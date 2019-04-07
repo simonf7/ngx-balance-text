@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-balance-text": [
+        "dist/ngx-balance-text"
+      ],
+      "ngx-balance-text/*": [
+        "dist/ngx-balance-text/*"
+      ]
+    }
   }
 }

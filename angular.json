@@ -130,6 +130,41 @@
           }
         }
       }
+    },
+    "NgxBalanceText": {
+      "root": "projects/ngx-balance-text",
+      "sourceRoot": "projects/ngx-balance-text/src",
+      "projectType": "library",
+      "prefix": "Ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-balance-text/tsconfig.lib.json",
+            "project": "projects/ngx-balance-text/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-balance-text/src/test.ts",
+            "tsConfig": "projects/ngx-balance-text/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-balance-text/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-balance-text/tsconfig.lib.json",
+              "projects/ngx-balance-text/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-balance-text"
