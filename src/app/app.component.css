@@ -1,0 +1,14 @@
+.section {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  padding: 0 10px;
+}
+
+.section h3 {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+
+.section p {
+  text-align: center;
+}

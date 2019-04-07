@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { NgxBalanceTextDirective } from './ngx-balance-text.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NgxBalanceTextDirective
   ],
   imports: [
     BrowserModule
