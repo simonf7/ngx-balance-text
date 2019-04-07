@@ -1,24 +1,42 @@
 # NgxBalanceText
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
+A simple Angular `directive` to integrate the `BalanceText` alternative text wrapping algorithm.
 
-## Code scaffolding
+https://github.com/adobe-webplatform/balance-text
 
-Run `ng generate component component-name --project NgxBalanceText` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project NgxBalanceText`.
-> Note: Don't forget to add `--project NgxBalanceText` or else it will be added to the default project in your `angular.json` file. 
+## Example
 
-## Build
+A simple example can be found under `src/app` directory of this repository.
 
-Run `ng build NgxBalanceText` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Publishing
+`npm i ngx-balance-text`
 
-After building your library with `ng build NgxBalanceText`, go to the dist folder `cd dist/ngx-balance-text` and run `npm publish`.
+## Usage
 
-## Running unit tests
+1. Register the `NgxBalanceText` directive in your app module.
+   > `import { NgxBalanceText } from 'ngx-balance-text'`
 
-Run `ng test NgxBalanceText` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-## Further help
+import { AppComponent } from './app.component';
+import { NgxBalanceText } from 'ngx-balance-text';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+@NgModule({
+  declarations: [AppComponent, NgxBalanceText],
+  imports: [BrowserModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
+
+2. Use the directive in the required HTML elements.
+
+```html
+<p ngxBalanceText>
+  This is some text that will be split evenly between lines.
+</p>
+```

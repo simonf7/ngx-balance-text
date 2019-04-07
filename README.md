@@ -1,27 +1,47 @@
 # NgxBalanceText
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+A simple Angular `directive` to integrate the `BalanceText` alternative text wrapping algorithm.
 
-## Development server
+https://github.com/adobe-webplatform/balance-text
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Example
 
-## Code scaffolding
+A simple example can be found under `src/app` directory of this repository.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+`npm i ngx-balance-text`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Usage
 
-## Running unit tests
+1. Register the `NgxBalanceText` directive in your app module.
+   > `import { NgxBalanceText } from 'ngx-balance-text'`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-## Running end-to-end tests
+import { AppComponent } from './app.component';
+import { NgxBalanceText } from 'ngx-balance-text';
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+@NgModule({
+  declarations: [AppComponent, NgxBalanceText],
+  imports: [BrowserModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
 
-## Further help
+2. Use the directive in the required HTML elements.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```html
+<p ngxBalanceText>
+  This is some text that will be split evenly between lines.
+</p>
+```
+
+## Build NgxBalanceText
+
+Run `ng build NgxBalanceText` to build the library. The build artifacts will be stored in the
+`dist/ngx-balance-text` directory.
