@@ -3,3 +3,4 @@
  */
 
 export * from './lib/ngx-balance-text.directive';
+export * from './lib/ngx-balance-text.module';
