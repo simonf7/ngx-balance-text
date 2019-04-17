@@ -1,5 +1,5 @@
-# NgxBalanceText - v0.6.0 (08/04/2019)
+# NgxBalanceText - v0.7.0 (08/04/2019)
 
 ## Pre-release
 
-New build
+Reduce Angular version required to 5.

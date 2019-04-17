@@ -1,6 +1,6 @@
 {
   "name": "ngx-balance-text",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "A simple directive to make use of the balance-text polyfill.",
   "author": "Simon Foster",
   "repository": {
@@ -19,8 +19,8 @@
   ],
   "license": "Apache 2.0",
   "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/common": "^5.0.0",
+    "@angular/core": "^5.0.0"
   },
   "dependencies": {
     "balance-text": "^3.2.1"
