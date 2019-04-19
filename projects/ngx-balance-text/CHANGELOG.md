@@ -1,4 +1,4 @@
-# NgxBalanceText - v0.8.0 (19/04/2019)
+# NgxBalanceText - v0.8.1 (19/04/2019)
 
 ## Pre-release
 
