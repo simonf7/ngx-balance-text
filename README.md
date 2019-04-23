@@ -14,19 +14,19 @@ A simple example can be found under `src/app` directory of this repository.
 
 ## Usage
 
-1. Register the `NgxBalanceText` directive in your app module.
-   > `import { NgxBalanceText } from 'ngx-balance-text'`
+1. Register the `NgxBalanceTextModule` directive in your app module.
+   > `import { NgxBalanceTextModule } from 'ngx-balance-text'`
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NgxBalanceText } from 'ngx-balance-text';
+import { NgxBalanceTextModule } from 'ngx-balance-text';
 
 @NgModule({
-  declarations: [AppComponent, NgxBalanceText],
-  imports: [BrowserModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, NgxBalanceTextModule],
   providers: [],
   bootstrap: [AppComponent]
 })
