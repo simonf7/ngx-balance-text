@@ -1,5 +1,5 @@
-# NgxBalanceText - v0.8.1 (19/04/2019)
+# NgxBalanceText - v0.8.2 (22/04/2019)
 
 ## Pre-release
 
-Increased usage of Angular lifecycle hooks to improve the reliability of when balance text needs to run.
+README updated to the correct way to import the module.
