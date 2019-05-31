@@ -17,29 +17,31 @@ A simple example can be found under `src/app` directory of this repository.
 1. Register the `NgxBalanceTextModule` directive in your app module.
    > `import { NgxBalanceTextModule } from 'ngx-balance-text'`
 
-```typescript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+    For example -
 
-import { AppComponent } from './app.component';
-import { NgxBalanceTextModule } from 'ngx-balance-text';
+    ```typescript
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
 
-@NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, NgxBalanceTextModule],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule {}
-```
+    import { AppComponent } from './app.component';
+    import { NgxBalanceTextModule } from 'ngx-balance-text';
+
+    @NgModule({
+      declarations: [AppComponent],
+      imports: [BrowserModule, NgxBalanceTextModule],
+      providers: [],
+      bootstrap: [AppComponent]
+    })
+    export class AppModule {}
+    ```
 
 2. Use the directive in the required HTML elements.
 
-```html
-<p ngxBalanceText>
-  This is some text that will be split evenly between lines.
-</p>
-```
+    ```html
+    <p ngxBalanceText>
+      This is some text that will be split evenly between lines.
+    </p>
+    ```
 
 ## Build NgxBalanceText
 
