@@ -1,5 +1,5 @@
-# NgxBalanceText - v0.8.2 (22/04/2019)
+# NgxBalanceText - v0.9.0 (31/05/2019)
 
 ## Pre-release
 
-README updated to the correct way to import the module.
+Dependency security update.
